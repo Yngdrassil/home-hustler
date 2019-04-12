@@ -17,7 +17,7 @@
             $listingPrice = $bundle->ListPrice;
 
                         $monthly_tax_cost = $listingPrice * 0.01188 / 12;              //use property tax value of San Francisco for demo
-                        
+
             $address = $bundle->StreetNumber . " " . $bundle->StreetDirPrefix . " " . $bundle->StreetName . " " . $bundle->StreetSuffix;
             $city = $bundle->City;
             $state = $bundle->StateOrProvince;
@@ -404,5 +404,6 @@
       global $residentialListings;
       usort($residentialListings,$option);
     }
+    // hello
 
  ?>
