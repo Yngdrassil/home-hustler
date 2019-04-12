@@ -6,6 +6,7 @@
     require_once("moneyFormat.php");
     require_once("fedData.php");
 
+    //there you go
     $attom_api_key = 'a38f76c6891995290466517ef9c81623';
 
     if(isset($_POST['function2call']))
@@ -17,7 +18,7 @@
             $listingPrice = $bundle->ListPrice;
 
                         $monthly_tax_cost = $listingPrice * 0.01188 / 12;              //use property tax value of San Francisco for demo
-                        
+
             $address = $bundle->StreetNumber . " " . $bundle->StreetDirPrefix . " " . $bundle->StreetName . " " . $bundle->StreetSuffix;
             $city = $bundle->City;
             $state = $bundle->StateOrProvince;
