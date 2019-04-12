@@ -1,0 +1,237 @@
+{
+   "success":true,
+   "status":200,
+   "bundle":[
+      {
+         "UnparsedAddress":"4,5,6  Mc Kie Dr",
+         "PostalCode":"78752",
+         "ListPrice":500000,
+         "TaxAnnualAmount":4000,
+         "PropertyType":"Commercial Sale",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Natural Gas on Property",
+            "See Agent"
+         ],
+         "LivingArea":null,
+         "LotSizeAcres":null,
+         "BedroomsTotal":null,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":null,
+         "Coordinates":[
+            -97.74297,
+            30.267209
+         ],
+         "ListingKey":"8fd90a98d298dcff9dad8ff2ebc338fb",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/8fd90a98d298dcff9dad8ff2ebc338fb"
+      },
+      {
+         "UnparsedAddress":"98 FIFTH ST",
+         "PostalCode":"78718",
+         "ListPrice":6000,
+         "TaxAnnualAmount":110,
+         "PropertyType":"Lot",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Electricity Available",
+            "Natural Gas on Property",
+            "Natural Gas Not Available",
+            "Phone Available"
+         ],
+         "LivingArea":null,
+         "LotSizeAcres":null,
+         "BedroomsTotal":null,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":null,
+         "Coordinates":[
+            -97.74297,
+            30.267209
+         ],
+         "ListingKey":"d5922a15b5c4b6079a0a9936b934a8b6",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/d5922a15b5c4b6079a0a9936b934a8b6"
+      },
+      {
+         "UnparsedAddress":"Lots 5, 6 & 7  Mc Kie Dr",
+         "PostalCode":"78752",
+         "ListPrice":500000,
+         "TaxAnnualAmount":1044.55,
+         "PropertyType":"Lot",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Electricity Available",
+            "Natural Gas Available"
+         ],
+         "LivingArea":null,
+         "LotSizeAcres":null,
+         "BedroomsTotal":null,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":null,
+         "Coordinates":[
+            -97.742716,
+            30.267889
+         ],
+         "ListingKey":"13cd1570f4a16d33f3c909f88e91f549",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/13cd1570f4a16d33f3c909f88e91f549"
+      },
+      {
+         "UnparsedAddress":"Lot 108-1.6 acres  Dexler Dr",
+         "PostalCode":"78734",
+         "ListPrice":50000,
+         "TaxAnnualAmount":2338,
+         "PropertyType":"Lot",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Electricity Available",
+            "See Agent"
+         ],
+         "LivingArea":null,
+         "LotSizeAcres":null,
+         "BedroomsTotal":null,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":null,
+         "Coordinates":[
+            -97.742943,
+            30.26824
+         ],
+         "ListingKey":"ca1a4219a43d2accb9819f0bf0bd1f54",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/ca1a4219a43d2accb9819f0bf0bd1f54"
+      },
+      {
+         "UnparsedAddress":"201 E 5th ST # 214",
+         "PostalCode":"78701",
+         "ListPrice":300000,
+         "TaxAnnualAmount":6500,
+         "PropertyType":"Residential",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Natural Gas on Property"
+         ],
+         "LivingArea":1033,
+         "LotSizeAcres":null,
+         "BedroomsTotal":1,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":1925,
+         "Coordinates":[
+            -97.741689,
+            30.266507
+         ],
+         "ListingKey":"c5d382fe6d92a32f1e576e2d124bec04",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/c5d382fe6d92a32f1e576e2d124bec04"
+      },
+      {
+         "UnparsedAddress":"201 E 5th ST # 206",
+         "PostalCode":"78701",
+         "ListPrice":300000,
+         "TaxAnnualAmount":7625,
+         "PropertyType":"Residential",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Natural Gas on Property"
+         ],
+         "LivingArea":1095,
+         "LotSizeAcres":null,
+         "BedroomsTotal":1,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":1925,
+         "Coordinates":[
+            -97.741689,
+            30.266507
+         ],
+         "ListingKey":"3fad1fc79ea76281413ef4a2b501da80",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/3fad1fc79ea76281413ef4a2b501da80"
+      },
+      {
+         "UnparsedAddress":"201 5th # 109",
+         "PostalCode":"78701",
+         "ListPrice":300000,
+         "TaxAnnualAmount":6847,
+         "PropertyType":"Residential",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Electricity on Property",
+            "Natural Gas on Property"
+         ],
+         "LivingArea":1108,
+         "LotSizeAcres":null,
+         "BedroomsTotal":1,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":1925,
+         "Coordinates":[
+            -97.741689,
+            30.266507
+         ],
+         "ListingKey":"36638896274d555ad88d97d02e9ef3b3",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/36638896274d555ad88d97d02e9ef3b3"
+      },
+      {
+         "UnparsedAddress":"201  E 5TH St  #221",
+         "PostalCode":"78701",
+         "ListPrice":600000,
+         "TaxAnnualAmount":4672,
+         "PropertyType":"Residential",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Electricity on Property",
+            "Natural Gas on Property"
+         ],
+         "LivingArea":1372,
+         "LotSizeAcres":null,
+         "BedroomsTotal":2,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":1925,
+         "Coordinates":[
+            -97.741689,
+            30.266507
+         ],
+         "ListingKey":"06b804fea9f9de8655504e60f1b915c3",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/06b804fea9f9de8655504e60f1b915c3"
+      },
+      {
+         "UnparsedAddress":"201 5th # 207",
+         "PostalCode":"78701",
+         "ListPrice":300000,
+         "TaxAnnualAmount":7830,
+         "PropertyType":"Residential",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Electricity on Property",
+            "Natural Gas on Property"
+         ],
+         "LivingArea":1369,
+         "LotSizeAcres":null,
+         "BedroomsTotal":1,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":1925,
+         "Coordinates":[
+            -97.741689,
+            30.266507
+         ],
+         "ListingKey":"bb8530e22aa9d96cf879fdebdde27e3c",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/bb8530e22aa9d96cf879fdebdde27e3c"
+      },
+      {
+         "UnparsedAddress":"201 5 St E # 209",
+         "PostalCode":"78701",
+         "ListPrice":400000,
+         "TaxAnnualAmount":8693,
+         "PropertyType":"Residential",
+         "StateOrProvince":"TX",
+         "Utilities":[
+            "Electricity on Property",
+            "Natural Gas on Property"
+         ],
+         "LivingArea":1476,
+         "LotSizeAcres":null,
+         "BedroomsTotal":2,
+         "BathroomsTotalDecimal":null,
+         "YearBuilt":1925,
+         "Coordinates":[
+            -97.741689,
+            30.266507
+         ],
+         "ListingKey":"614e90c6f4a115040dd7e96a9be960bf",
+         "url":"https://api.bridgedataoutput.com/api/v2/abor_ref/listings/614e90c6f4a115040dd7e96a9be960bf"
+      }
+   ],
+   "total":95017
+}
