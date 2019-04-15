@@ -6,102 +6,33 @@
     require_once("moneyFormat.php");
     require_once("fedData.php");
 
-    //there you go
-    $attom_api_key = 'a38f76c6891995290466517ef9c81623';
 
     if(isset($_POST['function2call']))
     {
       $residentialListings = reso_call();
 
       if(!empty($residentialListings)) {
-          foreach($residentialListings as $bundle) {
-            $listingPrice = $bundle->ListPrice;
-
-                        $monthly_tax_cost = $listingPrice * 0.01188 / 12;              //use property tax value of San Francisco for demo
-
-            $address = $bundle->StreetNumber . " " . $bundle->StreetDirPrefix . " " . $bundle->StreetName . " " . $bundle->StreetSuffix;
-            $city = $bundle->City;
-            $state = $bundle->StateOrProvince;
-            $zipcode = $bundle->PostalCode;
-
-            $bedrooms = $bundle->BedroomsTotal;
-            $bathrooms = $bundle->BathroomsTotalDecimal;
-            $squareFeet = $bundle->LivingArea;
-            $lotSize = $bundle->LotSizeAcres;
-            $yearBuilt = $bundle->YearBuilt;
-            $utilities = $bundle->Utilities;
-
-            $commuteDistanceTime = googleDistanceMatrix($address, $city, $state, $zipcode);   //Get commute distance and time
-            $distance = $commuteDistanceTime['distance'];
-            $time = $commuteDistanceTime['time'];
-            $commuteCost = 2 * ($distance / $mpg) * getGasPrice($state);    //Calculate commute cost (to and from work location)
-
-            $hours = getHoursFromTime($time);
-            $wageLoss = round($hours * $wage, 2);
-            $commuteCost += $wageLoss;
-
-            $monthlyCommute = $commuteCost * 350 / 12;                     //Annualize by 50 weeks of work per year, then divide into months
-
-
-
-            $electricityCost = 0;
-            if(hasElectricity($utilities)) {
-                $monthlyElectricityCost = monthlyElectricityCost($state, $squareFeet);
-            }
-
-            $naturalGasCost = 0;
-            if(hasElectricity($utilities)) {
-                $monthlyNaturalGasCost = monthlyNaturalGasCost($state, $squareFeet);
-            }
-
-            $mortgageRate = get30YrFixedMortgageRate() / 12;                          //turn into monthly rate
-
-            $mortgageNumerator = $mortgageRate * (pow((1 + $mortgageRate), 30 * 12));   //period = 30 years, every month
-            $mortgageDenominator = (pow((1 + $mortgageRate), 30 * 12)) - 1;
-
-            $monthlyMortgageCost = $listingPrice * ($mortgageNumerator / $mortgageDenominator);
-
-            $aggregateMonthlyCost = round((double)$monthlyCommute +
-                                          (double)$monthlyElectricityCost +
-                                          (double)$monthlyNaturalGasCost +
-                                          (double)$monthly_tax_cost +
-                                          (double)$monthlyMortgageCost, 0);
-
-            $bundle->monthlyTaxCost = $monthly_tax_cost;
-            $bundle->commuteDistance = $distance;
-            $bundle->commuteTime = $time;
-            $bundle->monthlyCommuteCost = $monthlyCommute;
-            $bundle->monthlyElectricityCost = $monthlyElectricityCost;
-            $bundle->monthlyNaturalGasCost = $monthlyNaturalGasCost;
-            $bundle->monthlyMortgageCost = $monthlyMortgageCost;
-            $bundle->aggregateMonthlyCost = $aggregateMonthlyCost;                 //add total monthly cost to the JSON object for filtering
-
-          }
+          $residentialListings = populate_JSON_Estimates($residentialListings);
       }
 
       if($_POST['maxMonthlyCost']!="")
       {
         foreach($residentialListings as $bundle)
         {
-          if(($bundle->TaxAnnualAmount)>$_POST['maxMonthlyCost'])
+          if(($bundle->aggregateMonthlyCost)>$_POST['maxMonthlyCost'])
             unset($residentialListings[$bundle]);
         }
       }
+
       if($_POST['maxCommuteCost']!="")
       {
 
       }
       if($_POST['maxCommuteDistance']!="")
       {
-        foreach($residentialListings as $bundle=>$element)
+        foreach($residentialListings as $bundle)
         {
-          $address = $element->StreetNumber . " " . $element->StreetDirPrefix . " " . $element->StreetName . " " . $element->StreetSuffix;
-          $city = $element->City;
-          $state = $element->StateOrProvince;
-          $zipcode = $element->PostalCode;
-          $commuteDistanceTime = googleDistanceMatrix($address, $city, $state, $zipcode);
-          $distance = $commuteDistanceTime['distance'];
-          if($distance>$_POST['maxCommuteDistance'])
+          if($bundle->commuteDistance>$_POST['maxCommuteDistance'])
             unset($residentialListings[$bundle]);
         }
       }
@@ -137,7 +68,7 @@
         sortListings("reverseSortByListingPrice");
       if($_POST['option']=='rcommute-distance')
         sortListings("reverseSortByCommuteDistance");
-      parseListings();
+      parseListings($residentialListings);
     }
 
     function reso_call() {
@@ -146,7 +77,7 @@
         $dataset = 'test_sf';    //currently using San Francisco dataset
         $access_token = '626af6da8489a7d2710d55f37619851c';
         $fields = 'StreetNumber,StreetDirPrefix,StreetName,StreetSuffix,City,StateOrProvince,PostalCode,Media,ListPrice,TaxAnnualAmount,InsuranceExpense,PropertyType,Utilities,LivingArea,LotSizeAcres,BedroomsTotal,BathroomsTotalDecimal,YearBuilt';
-        $limit = 30;
+        $limit = 10;
 
         $near = $_POST['state'];
         if(!empty($_POST['zipcode'])) {
@@ -183,9 +114,7 @@
                 }
             }
         }
-        else {
-            echo "<br><br><br><tr><hr><hr><br><center>No Results Found</center><hr></tr><hr>";
-        }
+
         //returns an array of JSON objects
         if (isset($residentialListings)) {
             return $residentialListings;
@@ -196,30 +125,104 @@
 
     }
 
-    function parseListings() {
+    function parseListings($residentialListings) {
 
-        global $residentialListings;
+        if (!empty($residentialListings)) {
+            foreach($residentialListings as $bundle) {
+                $listingPrice = $bundle->ListPrice;
 
-        //calculate commuting cost
-        if (isset($_POST['inputVehicleMPG'])) {
-          $mpg = $_POST['inputVehicleMPG'];             //get mpg for commuting cost estimate
+                $address = $bundle->StreetNumber . " " . $bundle->StreetDirPrefix . " " . $bundle->StreetName . " " . $bundle->StreetSuffix;
+                $city = $bundle->City;
+                $state = $bundle->StateOrProvince;
+                $zipcode = $bundle->PostalCode;
+
+                $bedrooms = $bundle->BedroomsTotal;
+                $bathrooms = $bundle->BathroomsTotalDecimal;
+                $squareFeet = $bundle->LivingArea;
+                $lotSize = $bundle->LotSizeAcres;
+                $yearBuilt = $bundle->YearBuilt;
+                $utilities = $bundle->Utilities;
+
+                if (isset($bundle->MediaURL)) {   //use RESO image if provided
+                    $image = $bundle->MediaURL;
+                }
+                else {                            //otherwise use Google Streetview image
+                    $image = googleStreetImage($address, $city, $state, $zipcode);
+                }
+
+                $commuteTime = $bundle->commuteTime;
+
+                $monthlyTaxCost = $bundle->monthlyTaxCost;
+                $monthlyCommuteCost = $bundle->monthlyCommuteCost;
+                $monthlyElectricityCost = $bundle->monthlyElectricityCost;
+                $monthlyNaturalGasCost = $bundle->monthlyNaturalGasCost;
+                $monthlyMortgageCost = $bundle->monthlyMortgageCost;
+                $aggregateMonthlyCost = $bundle->aggregateMonthlyCost;
+
+                $listingPrice = toMoney($listingPrice);
+                $monthly_tax_cost = toMoney($monthlyTaxCost);
+                $monthlyCommuteCost = toMoney($monthlyCommuteCost);
+                $monthlyElectricityCost = toMoney($monthlyElectricityCost);
+                $monthlyNaturalGasCost = toMoney($monthlyNaturalGasCost);
+                $monthlyMortgageCost = toMoney($monthlyMortgageCost);
+                $aggregateMonthlyCost = toMoney($aggregateMonthlyCost);
+
+                echo "
+                <!DOCTYPE html>
+                <html>
+                <body>
+                <style type=\"text/css\">
+                  .m20_0{ margin:10px 0px;}
+                </style>
+                <div class=\"m20	_0\">
+                  <div class=\"col s13 m6 l6\">
+                        <div class=\"card\">
+                            <div class=\"card-image waves-effect waves-block waves-light\">
+                                <img src='$image' width='373' height='373' >
+                            </div>
+                            <div class=\"card-content\">
+                              <span class=\"card-title activator grey-text text-darken-1\" style=\"font-size:21px\">
+                                Listed Price: $listingPrice <br>
+                                Total Monthly Cost: $aggregateMonthlyCost <br>
+                                Commute Time: $commuteTime <br><i class=\"material-icons right\">more_vert</i>
+                              </span>
+                            </div>
+                            <div class=\"card-reveal\">
+                              <span class=\"card-title grey-text text-darken-4\">Details<i class=\"material-icons right\">close</i></span>
+                              <p>
+                                Location: $address&nbsp$city,&nbsp$state&nbsp$zipcode <br>
+                                Monthly Mortgage Bill: $monthlyMortgageCost <br>
+                                Monthly Tax:           $monthlyTaxCost <br>
+                                Monthly Electric Bill: $monthlyElectricityCost <br>
+                                Monthly Gas Bill:      $monthlyNaturalGasCost <br>
+                                Monthly Commute:       $monthlyCommuteCost <br>
+                                Number Bedrooms:  $bedrooms <br>
+                                Number Bathrooms: $bathrooms <br>
+                                Size:             $squareFeet sq. ft. <br>
+                                Lot Size:         $lotSize <br>
+                                Year Built:       $yearBuilt <br>
+                                Commute Distance: $distance mi <br>
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </body>
+                </html>";
+            }
         }
         else {
-          $mpg = 24.7;                                  //average mpg used if not provided
+            echo "<br><br><br><tr><hr><hr><br><center>No Results Found</center><hr></tr><hr>";
         }
 
-        if(isset($_POST['inputWage'])) {
-            $wage = $_POST['inputWage'];                //get wage if set
-        }
-        else {
-            $wage = 0;                                  //otherwise do not factor into commute cost
-        }
+    }
+
+    function populate_JSON_Estimates($residentialListings) {
 
         foreach($residentialListings as $bundle) {
             $listingPrice = $bundle->ListPrice;
 
-            //$monthly_tax_cost = $bundle->TaxAnnualAmount/ 12.0 / 100;    //divide by another 100 to adjust erroneous test data
-            $monthly_tax_cost = $listingPrice * 0.01188 / 12;              //use property tax value of San Francisco for demo
+            $monthlyTaxCost = $listingPrice * 0.01188 / 12;              //use property tax value of San Francisco for demo
 
             $address = $bundle->StreetNumber . " " . $bundle->StreetDirPrefix . " " . $bundle->StreetName . " " . $bundle->StreetSuffix;
             $city = $bundle->City;
@@ -233,67 +236,66 @@
             $yearBuilt = $bundle->YearBuilt;
             $utilities = $bundle->Utilities;
 
-            if (isset($bundle->MediaURL)) {   //use RESO image if provided
-                $image = $bundle->MediaURL;
+            //calculate commuting cost
+            if (isset($_POST['inputVehicleMPG'])) {
+              $mpg = $_POST['inputVehicleMPG'];             //get mpg for commuting cost estimate
             }
-            else {                            //otherwise use Google Streetview image
-                $image = googleStreetImage($address, $city, $state, $zipcode);
+            else {
+              $mpg = 24.7;                                  //average mpg used if not provided
             }
 
+            if(isset($_POST['inputWage'])) {
+                $wage = $_POST['inputWage'];                //get wage if set
+            }
+            else {
+                $wage = 0;                                  //otherwise do not factor into commute cost
+            }
 
-            $listingPrice = toMoney($listingPrice);
-            $monthly_tax_cost = toMoney($monthly_tax_cost);
-            $commuteCost = toMoney($commuteCost);
-            $monthlyCommute = toMoney($monthlyCommute);
-            $monthlyElectricityCost = toMoney($monthlyElectricityCost);
-            $monthlyNaturalGasCost = toMoney($monthlyNaturalGasCost);
-            $monthlyMortgageCost = toMoney($monthlyMortgageCost);
-            $aggregateMonthlyCost = toMoney($aggregateMonthlyCost);
+            $commuteDistanceTime = googleDistanceMatrix($address, $city, $state, $zipcode);   //Get commute distance and time
+            $distance = $commuteDistanceTime['distance'];
+            $time = $commuteDistanceTime['time'];
+            $commuteCost = 2 * ($distance / $mpg) * getGasPrice($state);    //Calculate commute cost (to and from work location)
 
-            echo "
-            <!DOCTYPE html>
-            <html>
-            <body>
-            <style type=\"text/css\">
-            	.m20_0{ margin:10px 0px;}
-            </style>
-            <div class=\"m20	_0\">
-            	<div class=\"col s13 m6 l6\">
-                    <div class=\"card\">
-                        <div class=\"card-image waves-effect waves-block waves-light\">
-                            <img src='$image' width='373' height='373' >
-                        </div>
-                        <div class=\"card-content\">
-                          <span class=\"card-title activator grey-text text-darken-1\" style=\"font-size:21px\">
-                            Listed Price: $listingPrice <br>
-                            Total Monthly Cost: $aggregateMonthlyCost <br>
-                            Commute Time: $time <br><i class=\"material-icons right\">more_vert</i>
-                          </span>
-                        </div>
-                        <div class=\"card-reveal\">
-                          <span class=\"card-title grey-text text-darken-4\">Details<i class=\"material-icons right\">close</i></span>
-                          <p>
-                            Location: $address&nbsp$city,&nbsp$state&nbsp$zipcode <br>
-                            Monthly Mortgage Bill: $monthlyMortgageCost <br>
-                            Monthly Tax:           $monthly_tax_cost <br>
-                            Monthly Electric Bill: $monthlyElectricityCost <br>
-                            Monthly Gas Bill:      $monthlyNaturalGasCost <br>
-                            Monthly Commute:       $monthlyCommute <br>
-                            Number Bedrooms:  $bedrooms <br>
-                            Number Bathrooms: $bathrooms <br>
-                            Size:             $squareFeet sq. ft. <br>
-                            Lot Size:         $lotSize <br>
-                            Year Built:       $yearBuilt <br>
-                            Commute Distance: $distance mi <br>
-                          </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </body>
-            </html>";
+            $hours = getHoursFromTime($time);
+            $wageLoss = round($hours * $wage, 2);
+            $commuteCost += $wageLoss;
+
+            $monthlyCommuteCost = $commuteCost * 350 / 12;                     //Annualize by 50 weeks of work per year, then divide into months
+
+            $monthlyElectricityCost = 0;
+            if(hasElectricity($utilities)) {
+                $monthlyElectricityCost = monthlyElectricityCost($state, $squareFeet);
+            }
+
+            $monthlyNaturalGasCost = 0;
+            if(hasElectricity($utilities)) {
+                $monthlyNaturalGasCost = monthlyNaturalGasCost($state, $squareFeet);
+            }
+
+            $mortgageRate = get30YrFixedMortgageRate() / 12;                          //turn into monthly rate
+
+            $mortgageNumerator = $mortgageRate * (pow((1 + $mortgageRate), 30 * 12));   //period = 30 years, every month
+            $mortgageDenominator = (pow((1 + $mortgageRate), 30 * 12)) - 1;
+
+            $monthlyMortgageCost = $listingPrice * ($mortgageNumerator / $mortgageDenominator);
+
+            $aggregateMonthlyCost = round((double)$monthlyCommuteCost +
+                                          (double)$monthlyElectricityCost +
+                                          (double)$monthlyNaturalGasCost +
+                                          (double)$monthlyTaxCost +
+                                          (double)$monthlyMortgageCost, 0);
+
+            $bundle->monthlyTaxCost = $monthlyTaxCost;
+            $bundle->commuteDistance = $distance;
+            $bundle->commuteTime = $time;
+            $bundle->monthlyCommuteCost = $monthlyCommuteCost;
+            $bundle->monthlyElectricityCost = $monthlyElectricityCost;
+            $bundle->monthlyNaturalGasCost = $monthlyNaturalGasCost;
+            $bundle->monthlyMortgageCost = $monthlyMortgageCost;
+            $bundle->aggregateMonthlyCost = $aggregateMonthlyCost;                 //add total monthly cost to the JSON object for filtering
+
         }
-
+        return $residentialListings;
     }
 
     function sortByListingPrice($a,$b){
@@ -313,19 +315,19 @@
         return 1;
     }
 
-    function reverseSortByTotalMonthlyCost($a,$b){ //to fix in the future
-      if(($a->TaxAnnualAmount / 12)==($b->TaxAnnualAmount / 12))
+    function reverseSortByTotalMonthlyCost($a,$b){
+      if(($a->aggregateMonthlyCost / 12)==($b->aggregateMonthlyCost / 12))
         return 0;
-      if(($a->TaxAnnualAmount / 12)>($b->TaxAnnualAmount / 12))
+      if(($a->aggregateMonthlyCost / 12)>($b->aggregateMonthlyCost / 12))
         return -1;
       else
         return 1;
     }
 
-    function sortByTotalMonthlyCost($a,$b){ //to fix in the future
-      if(($a->TaxAnnualAmount / 12)==($b->TaxAnnualAmount / 12))
+    function sortByTotalMonthlyCost($a,$b){
+      if(($a->aggregateMonthlyCost / 12)==($b->aggregateMonthlyCost / 12))
         return 0;
-      if(($a->TaxAnnualAmount / 12)>($b->TaxAnnualAmount / 12))
+      if(($a->aggregateMonthlyCost / 12)>($b->aggregateMonthlyCost / 12))
         return 1;
       else
         return -1;
@@ -351,20 +353,10 @@
 
     function sortByCommuteDistance($a,$b)
     {
-      $address = $a->StreetNumber . " " . $a->StreetDirPrefix . " " . $a->StreetName . " " . $a->StreetSuffix;
-      $city = $a->City;
-      $state = $a->StateOrProvince;
-      $zipcode = $a->PostalCode;
-      $commuteDistanceTime_a = googleDistanceMatrix($address, $city, $state, $zipcode);
-      $distance_a = $commuteDistanceTime_a['distance'];
 
+      $distance_a = $a->commuteDistance;
 
-      $address = $b->StreetNumber . " " . $b->StreetDirPrefix . " " . $b->StreetName . " " . $b->StreetSuffix;
-      $city = $b->City;
-      $state = $b->StateOrProvince;
-      $zipcode = $b->PostalCode;
-      $commuteDistanceTime_b = googleDistanceMatrix($address, $city, $state, $zipcode);
-      $distance_b = $commuteDistanceTime_b['distance'];
+      $distance_b = $b->commuteDistance;
 
       if($distance_a == $distance_b)
         return 0;
@@ -377,20 +369,10 @@
 
     function reverseSortByCommuteDistance($a,$b)
     {
-      $address = $a->StreetNumber . " " . $a->StreetDirPrefix . " " . $a->StreetName . " " . $a->StreetSuffix;
-      $city = $a->City;
-      $state = $a->StateOrProvince;
-      $zipcode = $a->PostalCode;
-      $commuteDistanceTime_a = googleDistanceMatrix($address, $city, $state, $zipcode);
-      $distance_a = $commuteDistanceTime_a['distance'];
 
+      $distance_a = $a->commuteDistance;
 
-      $address = $b->StreetNumber . " " . $b->StreetDirPrefix . " " . $b->StreetName . " " . $b->StreetSuffix;
-      $city = $b->City;
-      $state = $b->StateOrProvince;
-      $zipcode = $b->PostalCode;
-      $commuteDistanceTime_b = googleDistanceMatrix($address, $city, $state, $zipcode);
-      $distance_b = $commuteDistanceTime_b['distance'];
+      $distance_b = $b->commuteDistance;
 
       if($distance_a == $distance_b)
         return 0;
@@ -405,6 +387,5 @@
       global $residentialListings;
       usort($residentialListings,$option);
     }
-    // hello
 
  ?>
