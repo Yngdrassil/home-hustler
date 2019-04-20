@@ -1,0 +1,1346 @@
+{
+   "StreetNumber":"21650",
+   "StreetDirPrefix":null,
+   "StreetName":"F M Road 1431",
+   "StreetSuffix":null,
+   "City":"Lago Vista",
+   "StateOrProvince":"TX",
+   "PostalCode":"78645",
+   "ListPrice":40000000,
+   "TaxAnnualAmount":2500,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Internet-Cable",
+      "Internet-WiFi",
+      "Phone on Property"
+   ],
+   "LivingArea":5056,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":1986,
+   "Coordinates":[
+      -97.978866,
+      30.495933
+   ],
+   "ListingKey":"569d01537ba5f97c43096aad22127145",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/569d01537ba5f97c43096aad22127145"
+}{
+   "StreetNumber":"7400",
+   "StreetDirPrefix":null,
+   "StreetName":"Coldwater Canyon",
+   "StreetSuffix":"RD",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78730",
+   "ListPrice":40000000,
+   "TaxAnnualAmount":149,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Above Ground",
+      "Electricity Available",
+      "Underground"
+   ],
+   "LivingArea":1000,
+   "LotSizeAcres":null,
+   "BedroomsTotal":2,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":1980,
+   "Coordinates":[
+      -97.810105,
+      30.353572
+   ],
+   "ListingKey":"979377bd1f68cba9a77d1ae7871dbddd",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/979377bd1f68cba9a77d1ae7871dbddd"
+}{
+   "StreetNumber":"903",
+   "StreetDirPrefix":null,
+   "StreetName":"Crystal Mountain",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78733",
+   "ListPrice":30000000,
+   "TaxAnnualAmount":25663,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Above Ground",
+      "Electricity on Property",
+      "Propane on Property",
+      "Underground"
+   ],
+   "LivingArea":6588,
+   "LotSizeAcres":null,
+   "BedroomsTotal":4,
+   "BathroomsTotalDecimal":5.5,
+   "YearBuilt":1994,
+   "Coordinates":[
+      -97.869218,
+      30.307273
+   ],
+   "ListingKey":"6c0c288aa498d916fcd4a1d1ea2cfa9e",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/6c0c288aa498d916fcd4a1d1ea2cfa9e"
+}{
+   "StreetNumber":"37307",
+   "StreetDirPrefix":null,
+   "StreetName":"Diamond Oaks Drive",
+   "StreetSuffix":null,
+   "City":"Other",
+   "StateOrProvince":"TX",
+   "PostalCode":"77355",
+   "ListPrice":20000000,
+   "TaxAnnualAmount":20845,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property",
+      "Phone on Property",
+      "See Agent"
+   ],
+   "LivingArea":4214,
+   "LotSizeAcres":null,
+   "BedroomsTotal":3,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2002,
+   "Coordinates":[
+      -95.736646,
+      30.150991
+   ],
+   "ListingKey":"387e62650ea9995364dbddec43e2a36e",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/387e62650ea9995364dbddec43e2a36e"
+}{
+   "StreetNumber":"1",
+   "StreetDirPrefix":null,
+   "StreetName":"Casa Saanen",
+   "StreetSuffix":null,
+   "City":"Other",
+   "StateOrProvince":"QR",
+   "PostalCode":"77710",
+   "ListPrice":20000000,
+   "TaxAnnualAmount":20264,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Phone on Property"
+   ],
+   "LivingArea":26159,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2017,
+   "Coordinates":[
+      -87.07885,
+      20.611113
+   ],
+   "ListingKey":"c46fca1a4c765492aac3f53c6de35742",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/c46fca1a4c765492aac3f53c6de35742"
+}{
+   "StreetNumber":"1610",
+   "StreetDirPrefix":null,
+   "StreetName":"Creek",
+   "StreetSuffix":"RD",
+   "City":"Dripping Springs",
+   "StateOrProvince":"TX",
+   "PostalCode":"78620",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":22,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Propane on Property"
+   ],
+   "LivingArea":8055,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2001,
+   "Coordinates":[
+      -98.119329,
+      30.196584
+   ],
+   "ListingKey":"f2dd053aa1e7885553959da9d999d0e0",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/f2dd053aa1e7885553959da9d999d0e0"
+}{
+   "StreetNumber":"1",
+   "StreetDirPrefix":null,
+   "StreetName":"Residencia Fuego",
+   "StreetSuffix":null,
+   "City":"Other",
+   "StateOrProvince":"na",
+   "PostalCode":"na",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":3319,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Phone on Property"
+   ],
+   "LivingArea":17222,
+   "LotSizeAcres":null,
+   "BedroomsTotal":4,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2012,
+   "Coordinates":[
+      -86.848137,
+      21.135923
+   ],
+   "ListingKey":"5572cdf76759ea95776f8fb1ae9d106a",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/5572cdf76759ea95776f8fb1ae9d106a"
+}{
+   "StreetNumber":"3166",
+   "StreetDirPrefix":null,
+   "StreetName":"Workman Ranch",
+   "StreetSuffix":"RD",
+   "City":"Other",
+   "StateOrProvince":"TX",
+   "PostalCode":"77879",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":32000,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "See Agent"
+   ],
+   "LivingArea":7135,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2011,
+   "Coordinates":[
+      -96.447281,
+      30.422849
+   ],
+   "ListingKey":"58119d4f9f9b0b243dae1aa30b5f3612",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/58119d4f9f9b0b243dae1aa30b5f3612"
+}{
+   "StreetNumber":"900",
+   "StreetDirPrefix":null,
+   "StreetName":"Live Oak",
+   "StreetSuffix":"CIR",
+   "City":"West Lake Hills",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":121145,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":11833,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":9,
+   "YearBuilt":2005,
+   "Coordinates":[
+      -97.811912,
+      30.295558
+   ],
+   "ListingKey":"86d9aa7d8fb3e31689925d864144b5bd",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/86d9aa7d8fb3e31689925d864144b5bd"
+}{
+   "StreetNumber":"4314",
+   "StreetDirPrefix":null,
+   "StreetName":"Tortilla",
+   "StreetSuffix":"FLT",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78736",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":29527,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity Available"
+   ],
+   "LivingArea":6409,
+   "LotSizeAcres":null,
+   "BedroomsTotal":3,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":1983,
+   "Coordinates":[
+      -97.930264,
+      30.297606
+   ],
+   "ListingKey":"fd7be9b2df49a5ff0e613362a4a97d8c",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/fd7be9b2df49a5ff0e613362a4a97d8c"
+}{
+   "StreetNumber":null,
+   "StreetDirPrefix":null,
+   "StreetName":null,
+   "StreetSuffix":"TRL",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":151512.8,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity Available",
+      "Natural Gas Available",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":20117,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2001,
+   "Coordinates":[
+      -97.789561,
+      30.308425
+   ],
+   "ListingKey":"605cae2dd96abb5e31d1bcff741700c3",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/605cae2dd96abb5e31d1bcff741700c3"
+}{
+   "StreetNumber":"3201",
+   "StreetDirPrefix":null,
+   "StreetName":"Westlake",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":116591,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Phone on Property"
+   ],
+   "LivingArea":10608,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2001,
+   "Coordinates":[
+      -97.777925,
+      30.317809
+   ],
+   "ListingKey":"23300860c20a84f4aa5800bbdedc7458",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/23300860c20a84f4aa5800bbdedc7458"
+}{
+   "StreetNumber":"5101",
+   "StreetDirPrefix":null,
+   "StreetName":"Kensington",
+   "StreetSuffix":"CT",
+   "City":"Other",
+   "StateOrProvince":"TX",
+   "PostalCode":"75022",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":90681,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Internet-WiFi",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":27075,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":6.5,
+   "YearBuilt":1997,
+   "Coordinates":[
+      -97.110935,
+      33.032635
+   ],
+   "ListingKey":"f94dc72a08c24ecf7ea98e55bbf984c1",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/f94dc72a08c24ecf7ea98e55bbf984c1"
+}{
+   "StreetNumber":"13815",
+   "StreetDirPrefix":null,
+   "StreetName":"Pecan",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78734",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":83955,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity Available"
+   ],
+   "LivingArea":11745,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":8,
+   "YearBuilt":1999,
+   "Coordinates":[
+      -97.925932,
+      30.350426
+   ],
+   "ListingKey":"42c00d381006fc38c00789b772d5960c",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/42c00d381006fc38c00789b772d5960c"
+}{
+   "StreetNumber":"3811",
+   "StreetDirPrefix":null,
+   "StreetName":"Westlake",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":95495,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property"
+   ],
+   "LivingArea":5775,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2013,
+   "Coordinates":[
+      -97.779618,
+      30.325882
+   ],
+   "ListingKey":"82aecf99929a72dbbba4226b380b6e83",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/82aecf99929a72dbbba4226b380b6e83"
+}{
+   "StreetNumber":"11211",
+   "StreetDirPrefix":null,
+   "StreetName":"Musket Rim",
+   "StreetSuffix":"ST",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78738",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":33991,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas Not Available",
+      "Propane on Property"
+   ],
+   "LivingArea":7341,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":6,
+   "YearBuilt":1990,
+   "Coordinates":[
+      -97.927384,
+      30.283535
+   ],
+   "ListingKey":"5eb5cd75f656511e65497ca1333db521",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/5eb5cd75f656511e65497ca1333db521"
+}{
+   "StreetNumber":"215",
+   "StreetDirPrefix":null,
+   "StreetName":"Bella Riva",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78734",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":108669,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Propane on Property"
+   ],
+   "LivingArea":9760,
+   "LotSizeAcres":null,
+   "BedroomsTotal":8,
+   "BathroomsTotalDecimal":8,
+   "YearBuilt":2006,
+   "Coordinates":[
+      -97.951989,
+      30.391032
+   ],
+   "ListingKey":"94e06ef841b0da7f0a9fffb120fc21c9",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/94e06ef841b0da7f0a9fffb120fc21c9"
+}{
+   "StreetNumber":"2611",
+   "StreetDirPrefix":null,
+   "StreetName":"WESTLAKE",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":121295.87,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":9604,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2002,
+   "Coordinates":[
+      -97.780791,
+      30.307988
+   ],
+   "ListingKey":"11a83d2e46ebba2247f426a4150400c2",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/11a83d2e46ebba2247f426a4150400c2"
+}{
+   "StreetNumber":"3901",
+   "StreetDirPrefix":null,
+   "StreetName":"Watersedge",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78731",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":105708,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property"
+   ],
+   "LivingArea":7663,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":6.5,
+   "YearBuilt":1987,
+   "Coordinates":[
+      -97.774833,
+      30.320712
+   ],
+   "ListingKey":"fd862edf9d1367761835d18a1c6f3fd2",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/fd862edf9d1367761835d18a1c6f3fd2"
+}{
+   "StreetNumber":"4104",
+   "StreetDirPrefix":null,
+   "StreetName":"Shimmering",
+   "StreetSuffix":"CV",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78731",
+   "ListPrice":10000000,
+   "TaxAnnualAmount":105706.1,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Internet-WiFi",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":7775,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":6,
+   "YearBuilt":2011,
+   "Coordinates":[
+      -97.776221,
+      30.325678
+   ],
+   "ListingKey":"b80def991fa335fc38110b7bc6cdf67e",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/b80def991fa335fc38110b7bc6cdf67e"
+}{
+   "StreetNumber":null,
+   "StreetDirPrefix":null,
+   "StreetName":null,
+   "StreetSuffix":"CV",
+   "City":"Spicewood",
+   "StateOrProvince":"TX",
+   "PostalCode":"78669",
+   "ListPrice":9000000,
+   "TaxAnnualAmount":63003,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Phone on Property",
+      "Propane on Property",
+      "See Agent"
+   ],
+   "LivingArea":7854,
+   "LotSizeAcres":null,
+   "BedroomsTotal":4,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2009,
+   "Coordinates":[
+      -97.995155,
+      30.40195
+   ],
+   "ListingKey":"178b8296c70328cc0f4b1eb2d2359dd3",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/178b8296c70328cc0f4b1eb2d2359dd3"
+}{
+   "StreetNumber":"1750",
+   "StreetDirPrefix":null,
+   "StreetName":"FAR GALLANT",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":9000000,
+   "TaxAnnualAmount":114499.41,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":15779,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2002,
+   "Coordinates":[
+      -97.810319,
+      30.311926
+   ],
+   "ListingKey":"4fa46d2dad71fe5f44de8ea58f813828",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/4fa46d2dad71fe5f44de8ea58f813828"
+}{
+   "StreetNumber":"2105",
+   "StreetDirPrefix":null,
+   "StreetName":"Island Wood",
+   "StreetSuffix":"RD",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78733",
+   "ListPrice":9000000,
+   "TaxAnnualAmount":59550,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":7745,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":1985,
+   "Coordinates":[
+      -97.846399,
+      30.337195
+   ],
+   "ListingKey":"34d079dc9706e9d158e4ee4b2a0cd113",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/34d079dc9706e9d158e4ee4b2a0cd113"
+}{
+   "StreetNumber":"2308",
+   "StreetDirPrefix":null,
+   "StreetName":"Woodlawn",
+   "StreetSuffix":"BLVD",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78703",
+   "ListPrice":9000000,
+   "TaxAnnualAmount":42899.08,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Internet-Cable",
+      "Internet-WiFi",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":11653,
+   "LotSizeAcres":null,
+   "BedroomsTotal":8,
+   "BathroomsTotalDecimal":9.5,
+   "YearBuilt":1940,
+   "Coordinates":[
+      -97.758354,
+      30.290416
+   ],
+   "ListingKey":"9ff0a38088274a8ea6e402b61cbe4f7d",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/9ff0a38088274a8ea6e402b61cbe4f7d"
+}{
+   "StreetNumber":"1",
+   "StreetDirPrefix":null,
+   "StreetName":"NILES",
+   "StreetSuffix":"RD",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78703",
+   "ListPrice":9000000,
+   "TaxAnnualAmount":152174,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property"
+   ],
+   "LivingArea":10496,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":6,
+   "YearBuilt":2000,
+   "Coordinates":[
+      -97.757062,
+      30.28532
+   ],
+   "ListingKey":"f4052261c62b74d406f5919750428803",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/f4052261c62b74d406f5919750428803"
+}{
+   "StreetNumber":"3705",
+   "StreetDirPrefix":null,
+   "StreetName":"WESTLAKE",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":8000000,
+   "TaxAnnualAmount":78018,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":7923,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2000,
+   "Coordinates":[
+      -97.779016,
+      30.324242
+   ],
+   "ListingKey":"1115b9b38cdc39e221f3a6f2bd4cda91",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/1115b9b38cdc39e221f3a6f2bd4cda91"
+}{
+   "StreetNumber":"4501",
+   "StreetDirPrefix":null,
+   "StreetName":"Island",
+   "StreetSuffix":"CV",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78731",
+   "ListPrice":8000000,
+   "TaxAnnualAmount":119627,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Internet-Cable",
+      "Natural Gas on Property",
+      "Phone on Property"
+   ],
+   "LivingArea":11774,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":7,
+   "YearBuilt":2008,
+   "Coordinates":[
+      -97.77797,
+      30.330485
+   ],
+   "ListingKey":"022e6f8e3f66e3c49165e3414eb023bd",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/022e6f8e3f66e3c49165e3414eb023bd"
+}{
+   "StreetNumber":"17301",
+   "StreetDirPrefix":null,
+   "StreetName":"FlintRock",
+   "StreetSuffix":"RD",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78738",
+   "ListPrice":8000000,
+   "TaxAnnualAmount":41747,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Phone on Property",
+      "Propane on Property"
+   ],
+   "LivingArea":12206,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":1992,
+   "Coordinates":[
+      -98.00763,
+      30.334328
+   ],
+   "ListingKey":"08862f91039cbb6051413dd2a019c76d",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/08862f91039cbb6051413dd2a019c76d"
+}{
+   "StreetNumber":"3811",
+   "StreetDirPrefix":null,
+   "StreetName":"Westlake",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":8000000,
+   "TaxAnnualAmount":78016,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property"
+   ],
+   "LivingArea":5775,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2014,
+   "Coordinates":[
+      -97.779622,
+      30.325894
+   ],
+   "ListingKey":"9aa856e45b0c1b0542c5176a7dd356e7",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/9aa856e45b0c1b0542c5176a7dd356e7"
+}{
+   "StreetNumber":"4401",
+   "StreetDirPrefix":"N",
+   "StreetName":"Capital Of Texas",
+   "StreetSuffix":"HWY",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":8000000,
+   "TaxAnnualAmount":0,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Internet-WiFi",
+      "Phone on Property",
+      "Propane on Property"
+   ],
+   "LivingArea":11012,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2007,
+   "Coordinates":[
+      -97.801007,
+      30.342282
+   ],
+   "ListingKey":"7dfcd8f69320119f3ade879d50074e43",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/7dfcd8f69320119f3ade879d50074e43"
+}{
+   "StreetNumber":"1",
+   "StreetDirPrefix":null,
+   "StreetName":"NILES",
+   "StreetSuffix":"RD",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78703",
+   "ListPrice":8000000,
+   "TaxAnnualAmount":109154,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property"
+   ],
+   "LivingArea":10496,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2000,
+   "Coordinates":[
+      -97.757062,
+      30.28532
+   ],
+   "ListingKey":"73a0ef1751b01b88c8f6058d4189e396",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/73a0ef1751b01b88c8f6058d4189e396"
+}{
+   "StreetNumber":"19544",
+   "StreetDirPrefix":null,
+   "StreetName":"Sandcastle",
+   "StreetSuffix":"DR",
+   "City":"Spicewood",
+   "StateOrProvince":"TX",
+   "PostalCode":"78669",
+   "ListPrice":8000000,
+   "TaxAnnualAmount":90749,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Propane on Property",
+      "Underground"
+   ],
+   "LivingArea":16323,
+   "LotSizeAcres":null,
+   "BedroomsTotal":9,
+   "BathroomsTotalDecimal":10,
+   "YearBuilt":2001,
+   "Coordinates":[
+      -98.005134,
+      30.397757
+   ],
+   "ListingKey":"4e351bef9a6d5d4193e3c2e387812935",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/4e351bef9a6d5d4193e3c2e387812935"
+}{
+   "StreetNumber":"24207",
+   "StreetDirPrefix":null,
+   "StreetName":"Pedernales Canyon",
+   "StreetSuffix":"TRL",
+   "City":"Spicewood",
+   "StateOrProvince":"TX",
+   "PostalCode":"78669",
+   "ListPrice":8000000,
+   "TaxAnnualAmount":19906.62,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property"
+   ],
+   "LivingArea":7527,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":7,
+   "YearBuilt":1995,
+   "Coordinates":[
+      -98.108344,
+      30.380708
+   ],
+   "ListingKey":"b5c61bbb905cbbc934efbcc240dd228a",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/b5c61bbb905cbbc934efbcc240dd228a"
+}{
+   "StreetNumber":"3907",
+   "StreetDirPrefix":null,
+   "StreetName":"Balcones",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78731",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":151751,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":13673,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2001,
+   "Coordinates":[
+      -97.764882,
+      30.318668
+   ],
+   "ListingKey":"d0fd90f1ee6aeb6c3d8291c6d2690ab2",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/d0fd90f1ee6aeb6c3d8291c6d2690ab2"
+}{
+   "StreetNumber":"1",
+   "StreetDirPrefix":null,
+   "StreetName":"Villa Nautica",
+   "StreetSuffix":null,
+   "City":"Other",
+   "StateOrProvince":"na",
+   "PostalCode":"na",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":2500,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "See Agent"
+   ],
+   "LivingArea":9090,
+   "LotSizeAcres":null,
+   "BedroomsTotal":4,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2006,
+   "Coordinates":[
+      -87.21561,
+      20.504408
+   ],
+   "ListingKey":"6307fb97b022d9ca7e60fdf1d575f97d",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/6307fb97b022d9ca7e60fdf1d575f97d"
+}{
+   "StreetNumber":"901",
+   "StreetDirPrefix":null,
+   "StreetName":"Terrace Mountain",
+   "StreetSuffix":"DR",
+   "City":"West Lake Hills",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":16600,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Propane on Property",
+      "See Agent"
+   ],
+   "LivingArea":4736,
+   "LotSizeAcres":null,
+   "BedroomsTotal":4,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2014,
+   "Coordinates":[
+      -97.803134,
+      30.304786
+   ],
+   "ListingKey":"b9dbcfca1dd19046b0d9dea5fdf5f38b",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/b9dbcfca1dd19046b0d9dea5fdf5f38b"
+}{
+   "StreetNumber":null,
+   "StreetDirPrefix":null,
+   "StreetName":null,
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78703",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":62812,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity Available",
+      "Natural Gas on Property",
+      "Phone Available"
+   ],
+   "LivingArea":7804,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":1969,
+   "Coordinates":[
+      -97.773126,
+      30.310723
+   ],
+   "ListingKey":"9cce694f4cbbdda71b9aba552257d32a",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/9cce694f4cbbdda71b9aba552257d32a"
+}{
+   "StreetNumber":"219",
+   "StreetDirPrefix":null,
+   "StreetName":"Bella Riva",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78734",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":88036,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Propane on Property"
+   ],
+   "LivingArea":16406,
+   "LotSizeAcres":null,
+   "BedroomsTotal":9,
+   "BathroomsTotalDecimal":9.5,
+   "YearBuilt":2005,
+   "Coordinates":[
+      -97.950614,
+      30.38936
+   ],
+   "ListingKey":"8bab7651e74e7fa23f6653bce29026b8",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/8bab7651e74e7fa23f6653bce29026b8"
+}{
+   "StreetNumber":"3120",
+   "StreetDirPrefix":null,
+   "StreetName":"EDGEWATER",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78733",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":47233,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property",
+      "Propane on Property"
+   ],
+   "LivingArea":4163,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":4.5,
+   "YearBuilt":2014,
+   "Coordinates":[
+      -97.856129,
+      30.353363
+   ],
+   "ListingKey":"a63c0eda16682d43d87ef2df9a921cb0",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/a63c0eda16682d43d87ef2df9a921cb0"
+}{
+   "StreetNumber":"26625",
+   "StreetDirPrefix":null,
+   "StreetName":"Wild River",
+   "StreetSuffix":"RD",
+   "City":"Spicewood",
+   "StateOrProvince":"TX",
+   "PostalCode":"78669",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":63668.24,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Internet-Cable",
+      "Propane on Property"
+   ],
+   "LivingArea":19385,
+   "LotSizeAcres":null,
+   "BedroomsTotal":11,
+   "BathroomsTotalDecimal":13.5,
+   "YearBuilt":2005,
+   "Coordinates":[
+      -98.121622,
+      30.409086
+   ],
+   "ListingKey":"5ded49ab80dc3b9f5516b8cbfe342b5b",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/5ded49ab80dc3b9f5516b8cbfe342b5b"
+}{
+   "StreetNumber":"1404",
+   "StreetDirPrefix":null,
+   "StreetName":"ROCKCLIFF",
+   "StreetSuffix":"RD",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":36243.51,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity Available",
+      "Propane Available"
+   ],
+   "LivingArea":3027,
+   "LotSizeAcres":null,
+   "BedroomsTotal":2,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2017,
+   "Coordinates":[
+      -97.785358,
+      30.335784
+   ],
+   "ListingKey":"4e199b98f97262a4bf6b3f24611dcbd1",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/4e199b98f97262a4bf6b3f24611dcbd1"
+}{
+   "StreetNumber":"6500",
+   "StreetDirPrefix":null,
+   "StreetName":"County Road 340",
+   "StreetSuffix":null,
+   "City":"Burnet",
+   "StateOrProvince":"TX",
+   "PostalCode":"78611",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":11899.68,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Phone on Property"
+   ],
+   "LivingArea":4889,
+   "LotSizeAcres":null,
+   "BedroomsTotal":3,
+   "BathroomsTotalDecimal":4.5,
+   "YearBuilt":2000,
+   "Coordinates":[
+      -98.224946,
+      30.663064
+   ],
+   "ListingKey":"0cd08ebd1cdbd424ee60c2c9c8a9d5aa",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/0cd08ebd1cdbd424ee60c2c9c8a9d5aa"
+}{
+   "StreetNumber":"312",
+   "StreetDirPrefix":null,
+   "StreetName":"Wennmohs",
+   "StreetSuffix":"PL",
+   "City":"Horseshoe Bay",
+   "StateOrProvince":"TX",
+   "PostalCode":"78657",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":69858,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Phone on Property"
+   ],
+   "LivingArea":11104,
+   "LotSizeAcres":null,
+   "BedroomsTotal":7,
+   "BathroomsTotalDecimal":8.5,
+   "YearBuilt":1997,
+   "Coordinates":[
+      -98.387089,
+      30.559645
+   ],
+   "ListingKey":"76dd08f7a56533c575e53a4ae0d9514c",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/76dd08f7a56533c575e53a4ae0d9514c"
+}{
+   "StreetNumber":"518",
+   "StreetDirPrefix":null,
+   "StreetName":"BUCKEYE",
+   "StreetSuffix":"TRL",
+   "City":"West Lake Hills",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":62118.35,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property",
+      "Solar"
+   ],
+   "LivingArea":8640,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2002,
+   "Coordinates":[
+      -97.811449,
+      30.288394
+   ],
+   "ListingKey":"76407d9bfff45ff3c174a17a86c458ed",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/76407d9bfff45ff3c174a17a86c458ed"
+}{
+   "StreetNumber":"4902",
+   "StreetDirPrefix":null,
+   "StreetName":"TORTUGA",
+   "StreetSuffix":"PL",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78731",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":89448.81,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property"
+   ],
+   "LivingArea":6046,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":5.5,
+   "YearBuilt":1987,
+   "Coordinates":[
+      -97.780314,
+      30.332619
+   ],
+   "ListingKey":"22d236a988a538d877c294189f9c14a7",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/22d236a988a538d877c294189f9c14a7"
+}{
+   "StreetNumber":"1313",
+   "StreetDirPrefix":null,
+   "StreetName":"Apache Tears",
+   "StreetSuffix":null,
+   "City":"Horseshoe Bay",
+   "StateOrProvince":"TX",
+   "PostalCode":"78657",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":40898,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Propane on Property"
+   ],
+   "LivingArea":6792,
+   "LotSizeAcres":null,
+   "BedroomsTotal":4,
+   "BathroomsTotalDecimal":6,
+   "YearBuilt":2011,
+   "Coordinates":[
+      -98.400368,
+      30.559449
+   ],
+   "ListingKey":"1bcf9d25be32f51d060b2992a4c1d90a",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/1bcf9d25be32f51d060b2992a4c1d90a"
+}{
+   "StreetNumber":"2918",
+   "StreetDirPrefix":null,
+   "StreetName":"OESTRICK",
+   "StreetSuffix":"LN",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78733",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":0,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Phone on Property",
+      "Propane on Property"
+   ],
+   "LivingArea":10890,
+   "LotSizeAcres":null,
+   "BedroomsTotal":8,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2008,
+   "Coordinates":[
+      -97.849904,
+      30.348212
+   ],
+   "ListingKey":"64f2bd366cccbada7e22287d9b8b2463",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/64f2bd366cccbada7e22287d9b8b2463"
+}{
+   "StreetNumber":"6901",
+   "StreetDirPrefix":null,
+   "StreetName":"Greenshores #3",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78730",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":62003,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Propane on Property",
+      "Solar"
+   ],
+   "LivingArea":7216,
+   "LotSizeAcres":null,
+   "BedroomsTotal":5,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2009,
+   "Coordinates":[
+      -97.815056,
+      30.343125
+   ],
+   "ListingKey":"4b9891189e6cd64c2ca131c41d46354f",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/4b9891189e6cd64c2ca131c41d46354f"
+}{
+   "StreetNumber":"3905",
+   "StreetDirPrefix":null,
+   "StreetName":"Island Knoll",
+   "StreetSuffix":"DR",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":44070,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":7486,
+   "LotSizeAcres":null,
+   "BedroomsTotal":6,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":1999,
+   "Coordinates":[
+      -97.7811,
+      30.310412
+   ],
+   "ListingKey":"6c96c20f4d01916e60be676668cb10ac",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/6c96c20f4d01916e60be676668cb10ac"
+}{
+   "StreetNumber":"2913",
+   "StreetDirPrefix":null,
+   "StreetName":"Westlake",
+   "StreetSuffix":"CV",
+   "City":"Austin",
+   "StateOrProvince":"TX",
+   "PostalCode":"78746",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":56736,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Natural Gas on Property"
+   ],
+   "LivingArea":5377,
+   "LotSizeAcres":null,
+   "BedroomsTotal":4,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2009,
+   "Coordinates":[
+      -97.77912,
+      30.311502
+   ],
+   "ListingKey":"a27b1aff225a353dd09f09169695b1b1",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/a27b1aff225a353dd09f09169695b1b1"
+}{
+   "StreetNumber":"19544",
+   "StreetDirPrefix":null,
+   "StreetName":"Sandcastle",
+   "StreetSuffix":"DR",
+   "City":"Spicewood",
+   "StateOrProvince":"TX",
+   "PostalCode":"78669",
+   "ListPrice":7000000,
+   "TaxAnnualAmount":114259,
+   "PropertyType":"Residential",
+   "Utilities":[
+      "Electricity on Property",
+      "Propane on Property",
+      "Underground"
+   ],
+   "LivingArea":15822,
+   "LotSizeAcres":null,
+   "BedroomsTotal":9,
+   "BathroomsTotalDecimal":null,
+   "YearBuilt":2001,
+   "Coordinates":[
+      -98.004722,
+      30.398342
+   ],
+   "ListingKey":"01aa391847c47e7d4e343ac7ee450e2c",
+   "url":"https:\/\/api.bridgedataoutput.com\/api\/v2\/abor_ref\/listings\/01aa391847c47e7d4e343ac7ee450e2c"
+}
