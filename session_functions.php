@@ -31,36 +31,43 @@
     }
 
     function createSession() {
-        $msg = '';
+        $message = '';
 
         if (isset($_SESSION['username'])) {
-            $msg= "You are already logged in!";
+            $message= "You are already logged in!";
+            echo "<script type='text/javascript'>alert('$message');</script>";
         }
 
         else if (isset($_POST['login']) && isset($_POST['username'])
              && isset($_POST['password'])) {
 
-             $username = mysqli_real_escape_string($con, $_POST['username']);
-             $password = mysqli_real_escape_string($con, $_POST['password']);
+             $username = mysqli_real_escape_string($_POST['username']);
+             $password = mysqli_real_escape_string($_POST['password']);
 
-             $password = password_hash($password, PASSWORD_DEFAULT);
+             global $mysqli; // make global $mysqli usable in this function
 
-             global $con; // make global $con usable in this function
-             $get_hash = "SELECT password FROM user WHERE username='$username' AND password='$password'";
+             $query = $mysqli->prepare("SELECT password FROM user WHERE username= ?");
+             $query->bind_param("s", $username);
+             $query->execute();
+             $result = $query->get_result();    //get hash if found
 
-             $hash = mysqli_query($con, $get_hash);
+             if($result->num_rows === 0) {
+               $message = "User account does not exist";    //username not in database
+               echo "<script type='text/javascript'>alert('$message');</script>";
+               exit();
+             }
 
-             if (password_verify($password, $hash)) {
-               session_regenerate_id();
-                $_SESSION['valid'] = true;
-                $_SESSION['timeout'] = 3600;
+             if (password_verify($password, $result)) {
+                $_SESSION['timeout'] = 3600;            //you get one hour, have fun
                 $_SESSION['username'] = $username;
                 echo 'Login Successful';
                 header('Refresh: 1; URL = ../index.php'); /* Redirect browser */
              }
              else {
-                $msg = 'Wrong username or password';
+                $message = "Wrong username or password";    //wrong password
+                echo "<script type='text/javascript'>alert('$message');</script>";
              }
+             $query->close();
         }
          //echo session_id();
     }
