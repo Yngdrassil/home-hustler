@@ -4,13 +4,14 @@
 
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
     set_exception_handler(function($e) {
-      error_log($e->getMessage());
+      $msg = $e->getMessage();
+      echo("<div>$msg</div>");
       exit('Error connecting to database'); //Should be a message a typical user could understand
     });
 
-    $mysqli = new mysqli("localhost", "root", "", "home-hustler");
+    $mysqli = new mysqli("localhost", "root", '', "home_hustler");
     //modify later to match bluehost domain & credentials
 
-    $mysqli->set_charset("utf8mb4");
+    $mysqli->set_charset("utf8");
 
 ?>

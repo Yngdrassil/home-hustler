@@ -51,7 +51,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../registration/registration.php">Sign Up</a>
+              <a class="nav-link js-scroll-trigger" href="../register/register.php">Sign Up</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../login/login.php">Login</a>
@@ -159,7 +159,7 @@
                                       var maxCommuteDistance=document.getElementById('commute-distance-filter').value;
                                       var maxListedPrice=document.getElementById('listed-price-filter').value;
                                       var minSquareFootage=document.getElementById('square-footage-filter').value;
-                                      
+
                                       if (document.getElementById('ascending').checked && document.getElementById('ascending').value==\"ascending\")
                                       {
                                           orderListings(strUser,maxMonthlyCost,maxCommuteCost,maxCommuteDistance,maxListedPrice,minSquareFootage);

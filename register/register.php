@@ -1,3 +1,7 @@
+<?php
+    require("createAccount.php");
+?>
+
 <html>
     <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
 
@@ -8,7 +12,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
         <link href="../css/new-age.css" rel="stylesheet">
-        <link rel="stylesheet" href="registration.css">
+        <link rel="stylesheet" href="register.css">
         <link rel="stylesheet" href="../navbar.css">
     </header>
 
@@ -32,7 +36,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../registration/registration.php">Sign Up</a>
+              <a class="nav-link js-scroll-trigger" href="../register/register.php">Sign Up</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../login/login.php">Login</a>
@@ -41,6 +45,8 @@
         </div>
       </div>
     </nav>
+
+    <br><br><br>
 
     <body>
     <div class="container">
@@ -52,30 +58,30 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-center">Register</h5>
-            <form class="form-signin">
+            <form class="form-signin" action="register.php" method="post">
               <div class="form-label-group">
-                <input type="text" id="inputUserame" class="form-control" placeholder="Username" required autofocus>
-                <label for="inputUserame">Username</label>
+                <input type="text" name="username" maxlength="24" class="form-control"required autofocus>
+                <label for="username">Username</label>
               </div>
 
               <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-                <label for="inputEmail">Email address</label>
+                <input type="email" name="email" id="email" maxlength="64" class="form-control" required>
+                <label for="email">Email Address</label>
               </div>
 
               <hr>
 
               <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                <label for="inputPassword">Password</label>
+                <input type="password" name="password" id="password" class="form-control" required>
+                <label for="password">Password</label>
               </div>
 
               <div class="form-label-group">
-                <input type="password" id="inputConfirmPassword" class="form-control" placeholder="Password" required>
-                <label for="inputConfirmPassword">Confirm password</label>
+                <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" required>
+                <label for="passwordConfirm">Confirm Password</label>
               </div>
 
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Register</button>
+              <input type="submit" name="registerButton" class="btn btn-lg btn-primary btn-block text-uppercase" value="Register">
               <a class="d-block text-center mt-2 small sign-in-redirect" href="../login/login.php">Sign In</a>
               <hr class="my-4">
               <!--
@@ -91,3 +97,37 @@
     </body>
 
 </html>
+
+<script>    //Password validation - check if password == passwordConfirm
+    var password = document.getElementById("password"), passwordConfirm = document.getElementById("passwordConfirm");
+
+    function validatePassword() {
+        if(password.value != passwordConfirm.value) {
+            passwordConfirm.setCustomValidity("Passwords Don't Match");
+        }
+        else {
+            passwordConfirm.setCustomValidity('');
+        }
+    }
+    password.onchange = validatePassword;
+    passwordConfirm.onkeyup = validatePassword;
+</script>
+<script>    //Email validation - check for regular expressions
+    var inputText = document.getElementById("email");
+    function ValidateEmail(inputText)
+    {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        if(inputText.value.match(mailformat))
+        {
+            document.form1.text1.focus();
+            return true;
+        }
+        else
+        {
+            alert("You have entered an invalid email address!");
+            document.form1.text1.focus();
+            return false;
+        }
+    }
+</script>
