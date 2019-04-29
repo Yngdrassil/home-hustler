@@ -20,7 +20,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="../index.html">
+        <a class="navbar-brand js-scroll-trigger" href="../index.php">
           <picture>
             <source media="(min-width: 480px)" srcset="../pics/icon.png">
             <source media="(max-width: 480px)" srcset="../pics/white-icon.png">

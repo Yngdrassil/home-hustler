@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+    require("session_functions.php");
+?>
 <html lang="en">
 
     <head>
@@ -24,31 +26,6 @@
 
       <!-- Custom styles for this template -->
       <link href="css/new-age.css" rel="stylesheet">
-      <script>
-      function validate()
-      {
-        var error=0;
-        var city=document.getElementById("city").value;
-        var zipCode=document.getElementById("zipcode").value;
-        var budget=document.getElementById("budget").value;
-        var mpg=document.getElementById("inputVehicleMPG").value;
-        var wage=document.getElementById("inputWage").value;
-
-        if( (isNaN(zipCode) && zipCode) || isNaN(budget) || isNaN(mpg) || isNaN(wage))
-        {
-          error=1;
-          alert("Warning: Zipcode, Budget, MPG, and Wage can only contain numeric values.");
-        }
-        var re = /^[a-zA-Z ]+$/;
-        if(!re.test(city))
-        {
-          error=1;
-          alert("Warning: the field City needs to contain the name of a city.");
-        }
-        if(error==0)
-          document.display.submit();
-      }
-      </script>
 
     </head>
 
@@ -73,18 +50,14 @@
               <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="registration/registration.php">Sign Up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="login/login.php">Login</a>
+              <?php isLoggedIn() ?>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <form action="display-homes/display-homes.php" method="post" name="display" id="display" class="search-parameters">
+      <form action="display-homes/display-homes.php" method="post" class="search-parameters">
           <header class="masthead">
 
               <div class="container h-100">
@@ -99,7 +72,6 @@
                   <div class="col-lg-4 offset-lg-3 my-auto">
                         <div class="form-label-group">
                           <label class="unselectable" for="address">Work Address</label>
-                          <label class="unselectable" for="address"></label>
                           <input type="text" name="address" class="form-control w-75" placeholder="Required" required autofocus>
                         </div>
 
@@ -107,7 +79,7 @@
 
                             <div class="form-label-group">
                               <label class="unselectable" for="city">City</label>
-                              <input type="text" name="city" id="city" class="form-control" placeholder="Required" required>
+                              <input type="text" name="city" class="form-control" placeholder="Required" required>
                             </div>
 
                             <div class="form-label-group">
@@ -171,26 +143,26 @@
 
                             <div class="form-label-group">
                               <label class="unselectable" for="zipcode">Zipcode</label>
-                              <input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="Preferred">
+                              <input type="text" name="zipcode" class="form-control" placeholder="Preferred">
                             </div>
 
                         <div class="form-label-group">
                           <label class="unselectable" for="budget">Budget</label>
-                          <input type="text" name="budget" id="budget" class="form-control" placeholder="Required" required>
+                          <input type="text" name="budget" class="form-control" placeholder="Required" required>
                         </div>
 
                         <div class="form-label-group">
                           <label class="unselectable" for="inputVehicleMPG">Vehicle MPG</label>
-                          <input type="text" name="inputVehicleMPG" id="inputVehicleMPG" class="form-control" placeholder="Optional">
+                          <input type="text" name="inputVehicleMPG" class="form-control" placeholder="Optional">
                         </div>
 
                         <div class="form-label-group">
                           <label class="unselectable" for="inputWage">Wage</label>
-                          <input type="text" name="inputWage" id="inputWage" class="form-control" placeholder="Optional">
+                          <input type="text" name="inputWage" class="form-control" placeholder="Optional">
                         </div>
 
 
-                            <center><input type="button" class="btn btn-outline btn-xl js-scroll-trigger" value="Search" name="search-button" onclick="validate();"></center>
+                            <center><input type="submit" class="btn btn-outline btn-xl js-scroll-trigger" value="Search" name="search-button"></center>
                   </div>
                 </div>
               </div>

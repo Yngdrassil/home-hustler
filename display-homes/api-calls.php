@@ -23,7 +23,7 @@
         foreach($residentialListings as $bundle)
         {
           if(($bundle->aggregateMonthlyCost)>$_POST['maxMonthlyCost'])
-            unset($residentialListings[$bundle]);
+            unset($residentialListings->bundle);
         }
       }
 

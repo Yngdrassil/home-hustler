@@ -8,9 +8,12 @@
         $message = '';
 
         if (isset($_SESSION['username'])) {
-            $message= "You are already logged in!";
-            echo "<script type='text/javascript'>alert('$message');</script>";
-            header('Refresh: 0; URL = ../index.html');
+
+            $query = $mysqli->prepare("SELECT user_id FROM user WHERE username= ?");
+            $query->bind_param("i", $user_id);
+            $query->execute();
+            $query->bind_result($result);    //bind result to $result variable
+            $query->fetch();                 //gets hash if username found
         }
 
         else if (isset($_POST['loginButton']) && isset($_POST['username'])
@@ -24,9 +27,10 @@
              $query = $mysqli->prepare("SELECT password FROM user WHERE username= ?");
              $query->bind_param("s", $username);
              $query->execute();
-             $result = $query->get_result();    //get hash if found
+             $query->bind_result($result);    //bind result to $result variable
+             $query->fetch();                 //gets hash if username found
 
-             if($result->num_rows === 0) {
+             if(empty($result)) {
                $message = "User account does not exist";    //username not in database
                echo "<script type='text/javascript'>alert('$message');</script>";
                header('Refresh: 0; URL = ../login/login.php');
@@ -38,12 +42,12 @@
                 $_SESSION['username'] = $username;
                 $message = "Login Successful. Welcome back $username!";
                 echo "<script type='text/javascript'>alert('$message');</script>";
-                header('Refresh: 0; URL = ../index.html'); /* Redirect browser */
+                header('Refresh: 0; URL = ../index.php'); /* Redirect browser */
              }
              else {
                 $message = "Wrong username or password";    //wrong password
                 echo "<script type='text/javascript'>alert('$message');</script>";
-                header('Refresh: 0; URL = ../login/login.php');
+                header('Refresh: 5; URL = ../login/login.php');
              }
              $query->close();
         }

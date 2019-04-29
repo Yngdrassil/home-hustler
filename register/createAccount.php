@@ -16,19 +16,21 @@
               $query = $mysqli->prepare("SELECT email,username FROM user WHERE email= ? OR username = ?");
               $query->bind_param("ss", $email, $username);
               $query->execute();
-              $result = $query->get_result();    //get username,email
 
-              if($result->fetch_assoc()[0] == $email) {
+              $query->bind_result($dbEmail, $dbUsername);    //bind email,username to $dbUsername,$dbEmail variables
+              $query->fetch();                 //gets email and username if found
+
+              if($dbEmail == $email) {
                   $message = "Email address already in use";    //Email already in database
                   echo "<script type='text/javascript'>alert('$message');</script>";
-                  header('Refresh: 0; URL = ../login/login.php');
+                  header('Refresh: 0; URL = ../register/register.php');
                   exit();
               }
 
-              else if ($result->fetch_assoc()[1] == $username) {
+              else if ($dbUsername == $username) {
                   $message = "Username already in use";    //username already in database
                   echo "<script type='text/javascript'>alert('$message');</script>";
-                  header('Refresh: 0; URL = ../login/login.php');
+                  header('Refresh: 0; URL = ../register/register.php');
                   exit();
               }
 
@@ -59,7 +61,7 @@
 
           $message = "Account Creation Successful. Welcome to Home Hustler $username!";
           echo "<script type='text/javascript'>alert('$message');</script>";
-          header('Refresh: 0; URL = ../index.html'); /* Redirect browser */
+          header('Refresh: 0; URL = ../index.php'); /* Redirect browser */
         }
     }
 ?>
