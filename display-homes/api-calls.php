@@ -6,11 +6,11 @@
     require_once("moneyFormat.php");
     require_once("fedData.php");
 
-    //there you go
     $attom_api_key = 'a38f76c6891995290466517ef9c81623';
 
     if(isset($_POST['function2call']))
     {
+      echo "<div class=/"loader/">Loading...</div>";
       $residentialListings = reso_call();
 
       if(!empty($residentialListings)) {
