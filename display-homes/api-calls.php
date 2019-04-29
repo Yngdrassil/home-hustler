@@ -7,7 +7,7 @@
     require_once("fedData.php");
 
     if(isset($_POST['spinner']))
-      echo file_get_contents("9-cube-grid.html");
+      echo file_get_contents("9-cube-grid.html"); //new
 
 
     if(isset($_POST['function2call']))

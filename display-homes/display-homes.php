@@ -145,7 +145,7 @@
                                   $address = $_POST['address'];
                                   $city = $_POST['city'];
                                   $state = $_POST['state'];
-                                  $zipcode = $_POST['zipcode'];
+                                  $zipcode = $_POST['zipcode']; //new
                                   echo "
                                     <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js\"></script>
                                     <script type=\"text/javascript\">
