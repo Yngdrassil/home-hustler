@@ -6,9 +6,6 @@
     require_once("moneyFormat.php");
     require_once("fedData.php");
 
-    if(isset($_POST['spinner']))
-      echo file_get_contents("9-cube-grid.html");
-
 
     if(isset($_POST['function2call']))
     {
@@ -23,7 +20,7 @@
         foreach($residentialListings as $bundle)
         {
           if(($bundle->aggregateMonthlyCost)>$_POST['maxMonthlyCost'])
-            unset($residentialListings[$bundle]);
+            unset($residentialListings->bundle);
         }
       }
 

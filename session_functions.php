@@ -21,12 +21,12 @@
             session_start();
         }
         if(isset($_SESSION['username'])) {
-            echo " <li><a href='#'>My Account</a></li>
-                   <li><a href='logout.php'>Logout</a></li> ";
+            echo " <li><a class='nav-link js-scroll-trigger' href='#'>My Account</a></li>
+                   <li><a class='nav-link js-scroll-trigger' href='logout.php'>Logout</a></li> ";
         }
         else {
-            echo " <li><a href='../register/register.php'>Signup</a></li>
-                   <li><a href='login.php'>Login</a></li> ";
+            echo " <li><a class='nav-link js-scroll-trigger' href='register/register.php'>Sign Up</a></li>
+                   <li><a class='nav-link js-scroll-trigger' href='login/login.php'>Login</a></li> ";
         }
     }
 
