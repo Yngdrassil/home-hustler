@@ -51,7 +51,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="../registration/registration.php">Sign Up</a>
+              <a class="nav-link js-scroll-trigger" href="../register/register.php">Sign Up</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="../login/login.php">Login</a>
@@ -153,28 +153,25 @@
                                     {
                                       var e = document.getElementById(\"sortHouses\");
                                       var strUser = e.options[e.selectedIndex].value;
+
+                                      var maxMonthlyCost=document.getElementById('monthly-cost-filter').value;
+                                      var maxCommuteCost=document.getElementById('commute-cost-filter').value;
+                                      var maxCommuteDistance=document.getElementById('commute-distance-filter').value;
+                                      var maxListedPrice=document.getElementById('listed-price-filter').value;
+                                      var minSquareFootage=document.getElementById('square-footage-filter').value;
+
                                       if (document.getElementById('ascending').checked && document.getElementById('ascending').value==\"ascending\")
                                       {
-                                          var maxMonthlyCost=document.getElementById('monthly-cost-filter').value;
-                                          var maxCommuteCost=document.getElementById('commute-cost-filter').value;
-                                          var maxCommuteDistance=document.getElementById('commute-distance-filter').value;
-                                          var maxListedPrice=document.getElementById('listed-price-filter').value;
-                                          var minSquareFootage=document.getElementById('square-footage-filter').value;
                                           orderListings(strUser,maxMonthlyCost,maxCommuteCost,maxCommuteDistance,maxListedPrice,minSquareFootage);
                                       }
                                       if (document.getElementById('descending').checked && document.getElementById('descending').value==\"descending\")
                                       {
-                                        var maxMonthlyCost=document.getElementById('monthly-cost-filter').value;
-                                        var maxCommuteCost=document.getElementById('commute-cost-filter').value;
-                                        var maxCommuteDistance=document.getElementById('commute-distance-filter').value;
-                                        var maxListedPrice=document.getElementById('listed-price-filter').value;
-                                        var minSquareFootage=document.getElementById('square-footage-filter').value;
                                         orderListings(\"r\" + strUser,maxMonthlyCost,maxCommuteCost,maxCommuteDistance,maxListedPrice,minSquareFootage);
                                       }
                                     }
                                     function orderListings(strUser,maxMonthlyCost,maxCommuteCost,maxCommuteDistance,maxListedPrice,minSquareFootage)
                                     {
-                                      $.ajax({ url: 'http://www.home-hustler.com/display-homes/api-calls.php',
+                                      $.ajax({ url: 'http://localhost:8080/home-hustler/display-homes/api-calls.php',
                                                data: {function2call: 'parseListings',
                                                       state: \"$state\",
                                                       budget: \"$budget\",
